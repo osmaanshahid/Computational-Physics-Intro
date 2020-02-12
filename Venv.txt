@@ -1,0 +1,42 @@
+# Making a virtual environment (venv) for Python 3.7
+
+# Create a folder that will store all your files related to comp physics
+
+mkdir Comp_Phys
+
+# Move into that folder
+
+cd Comp_Phys
+
+# When inside, create a new subdirectory that will house the virtual environment.
+# Call this new folder 'venv'
+
+python -m venv venv
+
+# If you're using version control through git, create a file called '.gitignore' and add the name of the directory that has the virtual environment:
+
+touch .gitignore
+echo 'venv' > .gitignore
+
+# Now the venv directory won't be uploaded to GitHub.
+
+# Activate the virtual environment:
+
+source venv/bin/activate
+
+# Check to see which python is being called:
+
+which python
+
+# Use pip to install ipython and jupyter notebook
+
+pip install ipykernel
+
+# Create a new kernel for ipython
+
+ipython kernel install --user --name=Comp_Phys
+# (This will be installed with your global version of python, NOT in your virtual environment)
+
+# Make sure that IPython is being called through the python in the virtual environment:
+
+python -m IPython
