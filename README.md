@@ -6,7 +6,7 @@ Though the primary audience is composed of late high school and early college st
 
 
 
-Setup Guide (very rough draft - needs lots of work)
+# Setup Guide (very rough draft - needs lots of work)
 
 1.) Download Python
     - Add instructions for installation on Windows, Mac, and Linux
